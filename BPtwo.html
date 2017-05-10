@@ -1,0 +1,55 @@
+<html>
+<head>
+  <title>Quantitative trading algorithm with sentiment and traction analysis</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+<body>
+  <div id="header">
+    <h1>Quantitative Trading Algorithm with Sentiment and Traction Analysis<h1>
+  </div>
+  <div id="content">
+  <nav>
+    		<ul>
+        		<li><a href="#">Home</a></li>
+	        	<li><a href="blog.html">Blog Posts</a></li>
+    		</ul>
+		</nav>
+		<div class="container">
+    		<div class="blurb">
+          <h2 align="center">Blog Post II</h2>
+<h3>Updates on data source for traction score</h3>
+<p>&emsp;&emsp;&emsp;For the metric to determine traction we will use an optimized time period around the date
+of the news article whose sentiment score we have. The time period will be determined after
+further investigation. We will look at how much the Google search history for that company
+varies around the date of the article compared to how frequently a company is searched on a
+daily basis (found during a non overlapping time period in which the article was published). This
+will provide a measure of how the article impacted the search history of the company. The basis
+for defining the traction metric in this way is the assumption that news about a company will lead
+to more searches for that company. If we receive article titles, we can also add a weighted
+component of how frequently that article was searched to our overall measure of how frequently
+the specific company was searched.</p>
+<h3>Extrapolation of the Alexandria Research Methodology</h3>
+<p>&emsp;&emsp;&emsp;The Alexandria research team measured the validity of the scores by categorizing the
+stocks based on the average sentiment scores that the firm receives. It then tracked the returns
+of different stock categories and was able to identify the sentiment score as a significant source
+of alpha(outperformance).
+Similar to the Alexandria methodology we can also analyze the validity of the “traction
+score” which is a composite score that measures the impact of the media coverage on the
+stocks. By breaking down stocks with similar average media sentiment scores based on the
+level of impact that the media coverages have, we can identity if the “traction score” can be a
+source of additional alpha.</p>
+<p>&emsp;&emsp;&emsp;The Alexandria research team were careful to include the context of a sentence when
+assigning it its sentiment score. They claim in their Daily Sentiment Study that this is one of the
+factors that lead to a 90+% accuracy rate for all three classification types.
+Also similar to how the Alexandria research team considered context when assigning
+sentiment scores, we too may consider context when calculating an article's traction score.
+When inspecting the time period around an article's publication date, we may also take into
+account the number of similar articles, or articles about the same company or stock when
+assigning the article's traction score (more similar articles means a particular article likely has a
+lower effect on any changes to stock value, etc).</p>
+    		</div><!-- /.blurb -->
+		</div><!-- /.container -->
+  </div>
+</body>
+</html>
