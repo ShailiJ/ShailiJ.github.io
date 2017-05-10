@@ -1,7 +1,44 @@
 <html>
 <head>
-<title>ample</title>
+  <title>Quantitative trading algorithm with sentiment and traction analysis</title>
+  <link rel="stylesheet" type="text/css" href="/css/index.css">
+
+</head>
 <body>
-sample
+  <div id="header">
+    <h1>Quantitative Trading Algorithm with Sentiment and Traction Analysis<h1>
+  </div>
+  <div id="content">
+  <nav>
+    		<ul>
+        		<li><a href="/">Home</a></li>
+	        	<li><a href="/about">Blog Posts</a></li>
+    		</ul>
+		</nav>
+		<div class="container">
+    		<div class="blurb">
+        		<h2>Introduction</h2>
+				    <p>&emsp;&emsp;&emsp;We are using the news articles collected as part of the sentiment analysis employed by Alexandria covering stocks and
+              adding additional factors to see how they affect the existing sentiment score. We are using social media impact in particular
+              (Google Trends, Yahoo Finance et al) and analysing how the effect of the public’s reaction to the aforementioned articles had an
+              impact (if any) on the pre-calculated sentiment and confidence value.</p>
+            <p>&emsp;&emsp;&emsp;We are pairing Google search history of each company over the time period surrounding articles for which we have sentiment
+              scores.We will use a Google Trends API to capture this data for each company. Using the frequency of the company searches, we are defining a
+              metric that captures the “traction” that an article has on the company’s stock. If a company receives positive or negative media attention and
+              very few people are aware of the news, the impact of the news articles may be less significant.</p>
+            <p>&emsp;&emsp;&emsp;We majorly used Google trends to fetch the normalized interest a particular article generated over a certain period of time.
+              By learning from this data, we train an algorithm with supervised learning, with the scores being the dependent variable,
+              and the data gathered from Google trends the article being the independent variable.
+          <a href="/about">Read more about my life...</a></p>
+    		</div><!-- /.blurb -->
+		</div><!-- /.container -->
+		<footer>
+    		<ul>
+        		<li><a href="http://cs.brown.edu/courses/csci1951-a/">Data Science</a></li>
+        		<li><a href="#">Final project</a></li>
+			</ul>
+		</footer>
+  </div>
 </body>
 </html>
+
