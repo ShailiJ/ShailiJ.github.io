@@ -1,0 +1,64 @@
+<html>
+<head>
+  <title>Quantitative trading algorithm with sentiment and traction analysis</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+<body>
+  <div id="header">
+    <h1>Quantitative Trading Algorithm with Sentiment and Traction Analysis<h1>
+  </div>
+  <div id="content">
+  <nav>
+    		<ul>
+        		<li><a href="#">Home</a></li>
+	        	<li><a href="blog.html">Blog Posts</a></li>
+    		</ul>
+		</nav>
+		<div class="container">
+    		<div class="blurb">
+          <h2 align="center">Blog Post III</h2>
+<h3>Sentiment Analysis of Alexandria Articles (ML1)</h3>
+<p>&emsp;&emsp;&emsp;For this part we used a python natural language processing api to process several articles from alexandria to understand
+the differences between the two, and how traditional NLP tools can be modified and adapted for financial analysis purposes</p>
+<ol><li><h3>Sentiment Analysis using TextBlob and Comparison with Alexandria’s Scores</h3></li>
+<p>&emsp;&emsp;&emsp;TextBlob is a Python (2 and 3) library for processing textual data. It provides a simple API for
+diving into common natural language processing (NLP) tasks such as part-of-speech tagging,
+noun phrase extraction, sentiment analysis, classification, translation, and more.</p>
+<p>&emsp;&emsp;&emsp;The first article that we experimented with is “Police Arrest 5 for Allegedly Jumping Deputy at
+Disney World”, this article deals with exclusively non-financial data. And the TextBlob’s
+sentiment analysis yields a sentiment score of 0.02 which is inline with Alexandria’s 0. It seems
+that ACT has similar performance with normal NLP program in the face of a nonfinancial article.</p>
+<p>&emsp;&emsp;&emsp;The second article is “2 sentenced in Coke trade secret case” which deals with two publicly
+traded companies, Coca-cola and pepsi. In this case, the sentiment analysis of TextBlob failed,
+yielding a sentiment score of 0.12 vesus a -1 by ACT. If we look into the text of the file, no
+emotional words are used, just factual statements. The lack of emotional words led TextBlob to
+give this article a neutral score, but ACT managed to capture the negative impact that event has
+on the relevant companies.</p>
+<p>&emsp;&emsp;&emsp;The third article is “Borse Dubai and NASDAQ Have Secured 47.6 Per Cent of OMX Shares
+Through Direct Ownership, Option Agreements and Irrevocable Undertakings”, the TextBlob
+Algorithm failed to capture the intrinsic positive effect of such transaction, yielding a sentiment
+score of 0 while the ACTA yields a one. Here, the words that would be neutral in the normal
+context actually should be interpreted as positive.</p>
+<h3>Conclusion:</h3>
+<p>&emsp;&emsp;&emsp;Overall, the regular sentiment analysis does a good job interpreting events without
+hidden financial connotation, however, if financial terms and events are involved. It is fairly
+difficult for a standard NLP algorithm to detect the sentiment.<p>
+<li><h3>Alexandria’s Sentiment Analysis Algorithm</h3></li>
+<p>&emsp;&emsp;&emsp;By contrast, ACTA’s sentiment classification engine offers key benefits:
+  <p><ol>
+    <li>ACTA applies its own probabilistic algorithms to sentiment assessment – employing
+the patterns it has discovered through a statistical methodology – rather than be bound by rules
+previously fixed by humans. This allows ACTA to apply a far more complex “understanding” of
+the content it reads, including “unknown” rules and relationships that other systems can’t
+identify.</li>
+<li>ACTA dynamically selects and weights a virtually infinite range of classification
+patterns based on the strength of relationships, not due to any pre-assigned weighting.</li>
+<li>ACTA identifies sentiment within a broader context of meaning – given that the whole
+of a given article is taken in by the engine and analyzed as opposed to any individual words
+found within it. </li> </p>		</div><!-- /.blurb -->
+		</div><!-- /.container -->
+
+  </div>
+</body>
+</html>
