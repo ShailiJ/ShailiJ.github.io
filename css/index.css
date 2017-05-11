@@ -93,3 +93,10 @@ h1
     -khtml-background-size: 100% 100%; /*  Konqueror  */
     -moz-background-size: 100% 100%; /*  Firefox  */
 }
+
+img
+{
+  display: block;
+    margin-left: auto;
+    margin-right: auto
+}
